@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Exo+2");
+
+.instructions {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
 .circle {
     margin: 33px;
     border: 10px solid #333;
@@ -41,4 +62,41 @@
     right: 50%;
     bottom: 0%;
     top: 55%;
+}
+
+.bottom-right-panel {
+  position: absolute;
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+  left: 55%;
+  right: 0%;
+  bottom: 0%;
+  top: 55%;
+}
+
+.settings {
+    margin: 10px;
+}
+
+/*Form section taken from milestone 1 and adapted to this milestone*/
+
+/*Contact Form taken from resume class*/
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
 }
