@@ -1,0 +1,44 @@
+.circle {
+    margin: 33px;
+    border: 10px solid #333;
+    background-color: #333;
+    border-radius: 30%;
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-left-panel {
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 45%;
+    left: 55%;
+    right: 0%;
+    bottom: 50%;
+    top: 0%;
+}
+
+.top-right-panel {
+    position: absolute;
+    background-color: green;
+    width: 45%;
+    height: 45%;
+    left: 0%;
+    right: 45%;
+    bottom: 50%;
+    top: 0%
+}
+
+.bottom-left-panel {
+    position: absolute;
+    background-color: yellow;
+    width: 45%;
+    height: 50%;
+    left: 0;
+    right: 50%;
+    bottom: 0%;
+    top: 55%;
+}
