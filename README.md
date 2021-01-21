@@ -1,45 +1,115 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Simon Game
 
-Welcome USER_NAME,
+Hello and welcome to my second milestone project. For this project I chose to create my version of the simon game, as I like the attention to detail and love the challenge I think that this would be the right selection for me.
+The Simon Game is a memory game and was invented by Ralph H. Baer and Howard J. Morrison in 1978.
+The project is developed using HTML, CSS and JavaScript.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[**View Simon Game website here!**](https://nunocos.github.io/Simon-game-milestone/)
 
-## Gitpod Reminders
+---
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Description
+Simon plays a random sequence for the player to repeat using colours and sounds. The player has to repeat the same sequence as Simon to win the game, this sequence will get longer and longer if the player gets the right sequence, if he gets it wrong the counter will get to 0 and player needs to start over.
 
-`python3 -m http.server`
+---
 
-A blue button should appear to click: *Make Public*,
+## UX and Features
 
-Another blue button should appear to click: *Open Browser*.
+As the game as a colorfoul layout that's exactly how the layout should seem, will have a different background to enhance the target area.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### 1. Strategy
+The aim of this project is to create interactivity between the user and the game.
 
-A blue button should appear to click: *Make Public*,
+#### 2. Goals
+The goal of this website is to give a good experience to the user and to the user to have fun with this interactive game.
 
-Another blue button should appear to click: *Open Browser*.
+#### 3. Scope
+The website is designed to be responsive so that users can also interact with it on mobile.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+---
 
-## Updates Since The Instructional Video
+#### 4. Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Navbar
+    * Basic Navbar, navbar taken from the previous milestone project and adapted to this project. Only has 2 list items on this case, the homepage and contact from
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Homepage
+    * On the homepage there will be displayed only the game and instructions.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Simon Game
+    * On/Off button so that the user can initiate the game;
+    * Score box with counter so that the user can see the current score.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Contact Form Page
+    * Basic Bootstrap contact form with Email API to forward the contact from the users to me.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### 5. Skeleton
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Wireframe was created using [Balsamiq](https://balsamiq.com/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+##### Home Page
 
---------
+![](assets/images/Homepage.png)
 
-Happy coding!
+##### Contact Us
+
+![](assets/images/ContactForm.png)
+
+---
+
+## Technologies Used
+
+
+##### Languages Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+##### Frameworks, Libraries & Programs Used
+
+* [Git](https://git-scm.com/)
+* [Bootsrap](https://getbootstrap.com/)
+* [GitHub](https://github.com/)
+* [Balsamiq](https://balsamiq.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Coolors](https://coolors.co/ebf5df-bad4aa-d4d4aa-edb458-e8871e)
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+* [Autoprefixer CSS](https://autoprefixer.github.io/)
+* [JQuery](https://jquery.com/)
+
+---
+
+##### Validation
+
+[W3C Markup Validator](https://validator.w3.org/)
+* Index page - 
+* Contact-us page -
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* 
+
+
+[Google's Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+* 
+
+## Deployment
+
+##### GitHub Pages
+
+1. A local project was created in GitHub with a new repository called 'Mind-Gym-Project'
+2. The project had regular push and detailed commits which were pushed to the GitHub website before deployment
+3. The project was deployed by logging in to GitHub and locating the [GitHub Repository](https://nunocos.github.io/Simon-game-milestone/)
+4. At the top of the Repository (not top of page), locate the "Settings" Button on the menu and click
+5. Scroll down the Settings page until the "GitHub Pages" Section was found
+6. Under "Source", click the dropdown called "None" and select "Master Branch"
+7. The page will refresh and you will be brought back to the top of the settings page
+8. Scroll back down through the page to locate the now published site [link](https://nunocos.github.io/Simon-game-milestone/) in the "GitHub Pages" section
+9. The code can be run locally through clone or download, you can do this by opening the repository, clicking on the code button and then selecting either 'clone' or 'download'
+10. The Clone option provides a url, which you can use on your desktop IDE
+11. The Download option gives you a link so that you can download the zip file so that you can unzip it in your local machine
+---
