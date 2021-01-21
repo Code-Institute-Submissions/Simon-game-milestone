@@ -19,6 +19,9 @@ h2 {
     text-align: center;
 }
 
+.pad {
+    margin: auto;
+}
 .circle {
     margin: 33px;
     border: 10px solid #333;
