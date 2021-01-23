@@ -38,10 +38,11 @@ $("#stop").click(function() {
 
 function highlightColours() {
   gameSequence.forEach(function(element, index){ 
-    setTimeout(function(){ 
-      $(element + "-sound")[0].play(); 
-      $(element).addClass("active");
-      setTimeout(function(){$(element).removeClass("active");}, 500);
+    setTimeout(function(){
+        $(element + "-sound")[0].load();
+        $(element + "-sound")[0].play(); 
+        $(element).addClass("active");
+        setTimeout(function(){$(element).removeClass("active");}, 500);
     },
     700 * index); 
   });
@@ -55,7 +56,7 @@ function sequenceCompare() {
     userSequence = []; 
         if (gameScore == 20) { 
             $("#winner")[0].play();
-            alert("You win!"); 
+            alert("Congratualions!You have an excelent Memory!"); 
       } 
         else { 
             $("#correct")[0].play();
