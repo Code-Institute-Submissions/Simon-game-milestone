@@ -33,7 +33,7 @@ $(".panel").mouseup(function() {
   $(this).removeClass("active");
 });
 
-//when user wants to stop the game can click stop or can refresh page
+//when user wants to stop the game can click stop or can refresh page, also clears the console
 $("#stop").click(function() {
   location.reload();
 });
@@ -73,12 +73,13 @@ function sequenceCompare() {
         } 
   } 
 //error message when user gets wrong sequence
-  else {
-    $("#error-sound")[0].play();
-    alert("Almost!!Give it another Go"); 
-    userSequence = [];
-    highlightColours();
-  }
+        else {
+            $("#error-sound")[0].load();
+            $("#error-sound")[0].play();
+            alert("Almost!!Give it another Go"); 
+            userSequence = [];
+            highlightColours();
+        }
 }
 
 
