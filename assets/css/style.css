@@ -45,9 +45,7 @@ h2 {
     top: 0%;
 }
 
-.topLeftPanel-active {
-  background-color: darkred;
-}
+
 
 .topRightPanel {
     position: absolute;
@@ -60,9 +58,7 @@ h2 {
     top: 0%
 }
 
-.topRightPanel-Active {
-  background-color: darkgreen;
-}
+
 
 .bottomLeftPanel {
     position: absolute;
@@ -75,9 +71,7 @@ h2 {
     top: 55%;
 }
 
-.bottomLeftPanel-active {
-  background-color: #e6d47e;
-}
+
 
 .bottomRightPanel {
   position: absolute;
@@ -90,9 +84,7 @@ h2 {
   top: 55%;
 }
 
-.bottomRightPanel-active {
-  background-color: darkblue;
-}
+
 
 .active {
     opacity: .7;
