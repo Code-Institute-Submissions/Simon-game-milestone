@@ -115,12 +115,14 @@ The website is designed to be responsive so that users can also interact with it
 ---
 
 
+## Credits
+
 https://stackoverflow.com/a/36707123/9179340 ensures that the array elements are highlighted one after another and not simultaneously.
 
-The code for loading and playing sounds is from this video by YouTube user Happy Coder https://www.youtube.com/watch?v=4pfvy_A5ceE
+The code for playing sounds is from this video by YouTube user Happy Coder https://www.youtube.com/watch?v=4pfvy_A5ceE removed load due to issues when loading page giving errors
 
-following line is based on https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
+How to compare arrays https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
 
-
+Sounds from https://www.soundjay.com/index.html
 
 https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
