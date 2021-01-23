@@ -1,8 +1,10 @@
-var colourArray = ["#blue", "#orange", "#red", "#yellow"];
+//Variables
+var colourArray = ["#blue", "#green", "#red", "#yellow"];
 var gameSequence = [];
 var userSequence = [];
 var gameScore = 0;
 
+//Start game sequence
 $("#start").click(function() { 
     var rand = colourArray[Math.floor(Math.random() * 4)];
     gameSequence.push(rand);
@@ -11,6 +13,7 @@ $("#start").click(function() {
     highlightColours();
 });
 
+//Click panel sequence
 $(".panel").mousedown(function() {
   $("#"+(this.id)+"-sound")[0].load(); 
   $("#"+(this.id)+"-sound")[0].play();
@@ -28,6 +31,7 @@ $(".panel").mouseup(function() {
   $(this).removeClass("active");
 });
 
+//when user wants to stop the game can click stop or can refresh page
 $("#stop").click(function() {
   location.reload();
 });
@@ -42,7 +46,7 @@ function highlightColours() {
     700 * index); 
   });
 }
-
+//Compare User sequence with computer sequence
 function sequenceCompare() {
   if (userSequence.every(function(value, index) { return value === gameSequence[index]})) { 
     console.log("Match"); 
@@ -63,15 +67,10 @@ function sequenceCompare() {
             }, 500);
         } 
   } 
-  else if ($("input[type=checkbox]").prop("checked")) {
-    $("#error-sound")[0].play();
-    alert("Incorrect. Please click Start to begin a new game."); 
-    location.reload();
-  } 
-
+//error message when user gets wrong sequence
   else {
     $("#error-sound")[0].play();
-    alert("Incorrect. Please attempt the sequence again."); 
+    alert("Almost!!Give it another Go"); 
     userSequence = [];
     highlightColours();
   }
