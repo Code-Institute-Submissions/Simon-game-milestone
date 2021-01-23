@@ -17,6 +17,10 @@ Simon plays a random sequence for the player to repeat using colours and sounds.
 
 As the game as a colorfoul layout that's exactly how the layout should seem, will have a different background to enhance the target area.
 
+##### User Stories
+* I want a game that is clear on how to play.
+* I want 
+
 #### 1. Strategy
 The aim of this project is to create interactivity between the user and the game.
 
@@ -87,11 +91,11 @@ The website is designed to be responsive so that users can also interact with it
 ##### Validation
 
 [W3C Markup Validator](https://validator.w3.org/)
-* Index page - 
-* Contact-us page -
+* Index page - no errors, just a warning - PASS
+* Contact-us page - no errors, just warnings - PASS
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-* 
+* no errors found, all PASS
 
 
 [Google's Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
@@ -126,3 +130,6 @@ How to compare arrays https://stackoverflow.com/questions/7837456/how-to-compare
 Sounds from https://www.soundjay.com/index.html
 
 https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
+
+Tutorial for beginners
+https://freshman.tech/simon-game/
