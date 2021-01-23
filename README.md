@@ -174,8 +174,6 @@ I used several code from other users:
 * [Code Institute](https://codeinstitute.net/)
     * Used code from Rosie resume project on contact form.
 
-* [Rafael Assugeni](https://assugeni.github.io/milestone-simon/)
-    * Used code for building the game section and adjusted to my project.
 
 ---
 
