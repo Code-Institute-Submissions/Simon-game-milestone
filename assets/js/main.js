@@ -1,139 +1,80 @@
-//variables
-userSeq = [];
-simonSeq = [];
-var id, color, level = 0;
-const NUM_OF_LEVELS = 20;
-var error = false;
-var boardsound = [
-    "https://www.soundjay.com/button/sounds/button-37.mp3",
-    "https://www.soundjay.com/button/sounds/beep-06.mp3",
-    "https://www.soundjay.com/misc/sounds/censor-beep-01.mp3",
-    "https://www.soundjay.com/button/sounds/button-3.mp3"
-]
+var colourArray = ["#blue", "#orange", "#red", "#yellow"];
+var gameSequence = [];
+var userSequence = [];
+var gameScore = 0;
 
-//start sequence
-$(document).ready(function() {
-    $("#score").text("");
-    $("#start").click(function() {
-        level = 0;
-        level++;
-        simonSeq = [];
-        userSeq = [];
-        simonSequence();
-    })
-})
-
-$(".panel").click(function() {
-    id = $(this).attr("id");
-    color = $(this).attr("class").split(" ")[1];
-    userSequence();
+$("#start").click(function() { 
+    var rand = colourArray[Math.floor(Math.random() * 4)];
+    gameSequence.push(rand);
+    $("#start").attr("disabled", "disabled");
+    console.log(gameSequence);
+    highlightColours();
 });
 
-function userSequence() {
-  userSeq.push(id);
-    console.log(id+" "+color);
-    addClassSound(id, color);
-    //check user sequence
-    if(!checkUserSeq()) {
-      error = true;   
-      displayError();
-      userSeq = [];      
-      simonSequence();
-    }
-    else if(userSeq.length == simonSeq.length && userSeq.length < NUM_OF_LEVELS) {
-      level++;
-      userSeq = [];
-      error = false;
-      console.log("start simon")
-      simonSequence();
-    }
-    //checking for winners
-    if(userSeq.length == NUM_OF_LEVELS) {
-      displayWinner();
-      resetGame();
-    }     
-};
-
-function simonSequence() {
-  console.log("level "+level);
-  $(".display").text(level);
-  if(!error) {
-    getRandomNum();
-  } 
-  var i = 0;
-  var myInterval = setInterval(function() {
-    id = simonSeq[i];
-    color = $("#"+id).attr("class");
-    color = color.split("")[1];
-    console.log(id+" "+color);
-    addClassSound(id, color);
-    i++;
-    if(i == simonSeq.length) {
-      clearInterval(myInterval);
-    } 
-  }, 1000);  
-}
-
-
-//generate random sequence
-function getRandomNum() {
-  var random = Math.floor(Math.random() * 4);
-  simonSeq.push(random);
-}
-
-function addClassSound(id, color) {
-  $("#"+id).addClass(color+"-active");
-  playSound(id)
-  setTimeout(function(){
-    $("#"+id).removeClass(color+"-active");
-  }, 500);
-}
-
-function checkUserSeq() {
-  for(var i = 0; i < userSeq.length; i++) {
-    if(userSeq[i] != simonSeq[i]) {      
-      return false;
-    }
+$(".panel").mousedown(function() {
+  $("#"+(this.id)+"-sound")[0].load(); 
+  $("#"+(this.id)+"-sound")[0].play();
+  $(this).addClass("active");
+  userSequence.push("#" + this.id);
+  console.log(userSequence);
+   if (userSequence.length == gameSequence.length) { 
+    setTimeout(function(){ 
+      sequenceCompare();
+    }, 500);
   }
-  return true;
+});
+
+$(".panel").mouseup(function() {
+  $(this).removeClass("active");
+});
+
+$("#stop").click(function() {
+  location.reload();
+});
+
+function highlightColours() {
+  gameSequence.forEach(function(element, index){ 
+    setTimeout(function(){ 
+      $(element + "-sound")[0].play(); 
+      $(element).addClass("active");
+      setTimeout(function(){$(element).removeClass("active");}, 500);
+    },
+    700 * index); 
+  });
 }
 
-function displayError() {
-  console.log("error");  
-  var counter = 0;
-  var myError = setInterval(function() {
-    $(".display").text("Err");
-    counter++;
-    if(counter == 3) {
-      $(".display").text(level);
-      clearInterval(myError);
-      userSeq = [];
-      counter = 0;
-    }
-  }, 500);
+function sequenceCompare() {
+  if (userSequence.every(function(value, index) { return value === gameSequence[index]})) { 
+    console.log("Match"); 
+    gameScore++; 
+    $("#score").text(gameScore); 
+    userSequence = []; 
+        if (gameScore == 20) { 
+            $("#winner")[0].play();
+            alert("You win!"); 
+      } 
+        else { 
+            $("#correct")[0].play();
+            setTimeout(function() { 
+            var rand = colourArray[Math.floor(Math.random() * 4)];
+            gameSequence.push(rand); 
+            console.log(gameSequence);
+            highlightColours();
+            }, 500);
+        } 
+  } 
+  else if ($("input[type=checkbox]").prop("checked")) {
+    $("#error-sound")[0].play();
+    alert("Incorrect. Please click Start to begin a new game."); 
+    location.reload();
+  } 
+
+  else {
+    $("#error-sound")[0].play();
+    alert("Incorrect. Please attempt the sequence again."); 
+    userSequence = [];
+    highlightColours();
+  }
 }
 
-function displayWinner() {
-  var count = 0;
-  var winInterval = setInterval(function() { 
-    count++;
-    $(".display").text("Win");
-    if(count == 5) {
-      clearInterval(winInterval);
-      $(".display").text("00");
-      count = 0;
-    }
-  }, 500);
-}
 
-function playSound(id) {
-  var sound = new Audio(boardSound[id]);
-  sound.play();
-}
-
-function stopGame() {
-  userSeq = [];
-  simonSeq = [];
-  level = 0;
-  $("#score").text("00");
-}

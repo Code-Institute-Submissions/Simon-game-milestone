@@ -113,3 +113,14 @@ The website is designed to be responsive so that users can also interact with it
 10. The Clone option provides a url, which you can use on your desktop IDE
 11. The Download option gives you a link so that you can download the zip file so that you can unzip it in your local machine
 ---
+
+
+https://stackoverflow.com/a/36707123/9179340 ensures that the array elements are highlighted one after another and not simultaneously.
+
+The code for loading and playing sounds is from this video by YouTube user Happy Coder https://www.youtube.com/watch?v=4pfvy_A5ceE
+
+following line is based on https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
+
+
+
+https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
