@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Audiowide|Exo+2");
-
-.instructions {
-    margin-top: 20px;
-}
-
 h1 {
     margin-bottom: 15px;
-}
-
-.text {
-    font-family: "Exo 2", sans-serif;
-    text-align: center;
 }
 
 .buttons {
@@ -37,7 +26,6 @@ h1 {
     overflow: hidden;
     position: relative;
 }
-
 
 /*Pannels*/
 .topLeftPanel {
@@ -100,8 +88,7 @@ h1 {
 
 /*Contact Form taken from resume class*/
 .contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 20px;
 }
@@ -109,11 +96,10 @@ h1 {
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%
+    max-width: 60%
 }
 
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #fafafa;
 }
