@@ -134,6 +134,8 @@ Used the above validators to check the code but tested the following:
 3. Sounds were confusing for new users
 4. Game pad was closer to right side, adjusted padding so that game pad is centered
 5. When screen resolution is bellow 400px game is cut off
+6. Every time contact page loads theres is one email sent.
+7. On Iphone there is a delay on highlight and sound when playing the game.
 
 ## Deployment
 
