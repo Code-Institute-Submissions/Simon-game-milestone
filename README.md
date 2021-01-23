@@ -9,8 +9,7 @@ The project is developed using HTML, CSS and JavaScript.
 ---
 
 ## Description
-Simon plays a random sequence for the player to repeat using colours and sounds. The player has to repeat the same sequence as Simon to win the game, this sequence will get longer and longer if the player gets the right sequence, if he gets it wrong the counter will get to 0 and player needs to start over.
-
+Simon plays a random sequence for the player to repeat using colours and sounds. The player has to repeat the same sequence as Simon to win the game, this sequence will get longer and longer if the player gets the right sequence, if he gets it wrong the sequence will be repeated and the player can continue the game.
 ---
 
 ## UX and Features
