@@ -19,7 +19,9 @@ As the game as a colorfoul layout that's exactly how the layout should seem, wil
 
 ##### User Stories
 * I want a game that is clear on how to play.
-* I want 
+* I want to know if I got the sequence right.
+* I want to start over the game if I want to.
+* I want to know when I win the game and not an infinite game.
 
 #### 1. Strategy
 The aim of this project is to create interactivity between the user and the game.
@@ -40,9 +42,15 @@ The website is designed to be responsive so that users can also interact with it
 * Homepage
     * On the homepage there will be displayed only the game and instructions.
 
+* Instructions
+    * Clear instructions added, user just needs to follow the directions.
+
 * Simon Game
-    * On/Off button so that the user can initiate the game;
+    * Start button so that the user can initiate the game;
     * Score box with counter so that the user can see the current score.
+    * Stop button so that the user can stop the game or start from scratch.
+    * I opted not to include the Strict mode as some user enquired said that is fairly annoying to every time they got one tile wrong to start over.
+    * 2 Alert boxes added to javascript code (when user gets sequence incorrect and when user wins the game) also sound added for when user gets sequence correct and when user wins the game a clapping sound plays.
 
 * Contact Form Page
     * Basic Bootstrap contact form with Email API to forward the contact from the users to me.
@@ -80,7 +88,6 @@ The website is designed to be responsive so that users can also interact with it
 * [GitHub](https://github.com/)
 * [Balsamiq](https://balsamiq.com/)
 * [Google Fonts](https://fonts.google.com/)
-* [Font Awesome](https://fontawesome.com/)
 * [Coolors](https://coolors.co/ebf5df-bad4aa-d4d4aa-edb458-e8871e)
 * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
 * [Autoprefixer CSS](https://autoprefixer.github.io/)
@@ -97,9 +104,28 @@ The website is designed to be responsive so that users can also interact with it
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * no errors found, all PASS
 
+[JS Hint](https://jshint.com/)
+    *No errors found, just one warning.
 
 [Google's Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
-* 
+* Page is mobile responsive
+
+##### Testing
+
+Used the above validators to check the code but tested the following:
+1. Clicked start and stop buttons to check if correct action is being done,
+2. Checked if score was incremented correctly,
+3. Checked on Devtools console tab if the game sequence and user sequence were being displayed correctly,
+4. Checked on Devtools console tab if correct IDs were being invocked,
+5. Played full game to ensure alert text box shows at the end of the game and winner sound is played,
+6. Missed sequence to check alert text box shows incorrect message and sequence is repeated, validated on Devtools Console checking the original sequence,
+7. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
+
+##### Bugs/errors
+1. I had to start over the javascript code multiple times due to errors on javascript code.
+2. Based on other users the start and Stop buttons are too small on mobile, adjusted size of the font to 30px
+3. Sounds were confusing for new users
+4. Game pag was closer to right side, adjusted padding so that game pad is centered
 
 ## Deployment
 
@@ -121,15 +147,21 @@ The website is designed to be responsive so that users can also interact with it
 
 ## Credits
 
-https://stackoverflow.com/a/36707123/9179340 ensures that the array elements are highlighted one after another and not simultaneously.
+I used several code from other users:
 
-The code for playing sounds is from this video by YouTube user Happy Coder https://www.youtube.com/watch?v=4pfvy_A5ceE removed load due to issues when loading page giving errors
+[Highlight sequence](https://stackoverflow.com/a/36707123/9179340)
+[How to compare arrays](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771) from Stack Overflow
+[Happy Coder](https://www.youtube.com/watch?v=4pfvy_A5ceE) The code for playing sounds is from this video by YouTube user Happy Coder , I had a error when the load was invocked but this was due to sound id being displayed incorrectly, corrected id name and load function is working.
+[Soundjay](https://www.soundjay.com/index.html) for all sounds on the game
+[Freshman](https://freshman.tech/simon-game/) Tutorial for beginners on how to build a Simon game with JS
 
-How to compare arrays https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
+##### Code Snippets
 
-Sounds from https://www.soundjay.com/index.html
+* ###### [Code Institute](https://codeinstitute.net/)
+    *Used code from Rosie resume project on contact form
 
-https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771
 
-Tutorial for beginners
-https://freshman.tech/simon-game/
+
+
+## Acknowledgements
+I've reached out to my mentor 
