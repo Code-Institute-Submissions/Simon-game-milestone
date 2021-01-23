@@ -159,6 +159,8 @@ Used the above validators to check the code but tested the following:
 
 I used several code from other users:
 
+##### Code Snippets
+
 * [Highlight sequence](https://stackoverflow.com/a/36707123/9179340)
 * [How to compare arrays](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771) from Stack Overflow
 * [Happy Coder](https://www.youtube.com/watch?v=4pfvy_A5ceE) The code for playing sounds is from this video by YouTube user Happy Coder , I had a error when the load was invocked but this was due to sound id being displayed incorrectly, corrected id name and load function is working.
@@ -166,13 +168,13 @@ I used several code from other users:
 * [Freshman](https://freshman.tech/simon-game/) Tutorial for beginners on how to build a Simon game with JS
 * [George Lewis](https://www.youtube.com/watch?v=zwKoo7VDj44) - Ideas on how to write out my HTML for the Simon game
 * [George Lewis](https://www.youtube.com/watch?v=muPIIfjazcU) - Ideas on how to write out my CSS for the Simon game
+* [WebDev Junkie](https://www.youtube.com/watch?v=W0MxUHlZo6U&ab_channel=WebDevJunkie) - Basic Simon game development
+* [Code Review](https://codereview.stackexchange.com/questions/162096/simon-game-in-javascript) - JavaScript section developed based on example and adapted to my own, took in consideration the comments from other developers.
 
-##### Code Snippets
-
-* ###### [Code Institute](https://codeinstitute.net/)
+* [Code Institute](https://codeinstitute.net/)
     * Used code from Rosie resume project on contact form.
 
-* ###### [Rafael Assugeni](https://assugeni.github.io/milestone-simon/)
+* [Rafael Assugeni](https://assugeni.github.io/milestone-simon/)
     * Used code for building the game section and adjusted to my project.
 
 ---
