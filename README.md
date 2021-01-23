@@ -122,7 +122,7 @@ Used the above validators to check the code but tested the following:
 7. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
 8. Tested navbar buttons, all directing to correct Pages
 9. Tested Contact Form:
-    * Left Name empty, cannot submit form
+    * Left Name empty, cannot submit form - ok
     * Place no email error message displayed
     * Place email without @ symbol error message displayed
     * submit form, message received on my email inbox
