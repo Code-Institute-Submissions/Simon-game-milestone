@@ -2,12 +2,14 @@
 var colourArray = ["#blue", "#green", "#red", "#yellow"];
 var gameSequence = [];
 var userSequence = [];
+//user starts game with score = 0
 var gameScore = 0;
 
 //Start game sequence
 $("#start").click(function() { 
     var rand = colourArray[Math.floor(Math.random() * 4)];
     gameSequence.push(rand);
+    //when user pushes start, start button is disabled and only enabled again after pressing stop or refreshing the page
     $("#start").attr("disabled", "disabled");
     console.log(gameSequence);
     highlightColours();
@@ -26,7 +28,7 @@ $(".panel").mousedown(function() {
     }, 500);
   }
 });
-
+//when user releases the left mouse click
 $(".panel").mouseup(function() {
   $(this).removeClass("active");
 });
@@ -36,6 +38,7 @@ $("#stop").click(function() {
   location.reload();
 });
 
+//Game sequence highlight adding css class .active to the panel
 function highlightColours() {
   gameSequence.forEach(function(element, index){ 
     setTimeout(function(){
@@ -54,6 +57,7 @@ function sequenceCompare() {
     gameScore++; 
     $("#score").text(gameScore); 
     userSequence = []; 
+    //Limiting the game to 20 rounds
         if (gameScore == 20) { 
             $("#winner")[0].play();
             alert("Congratualions!You have an excelent Memory!"); 
