@@ -23,18 +23,18 @@ As the game as a colorfoul layout that's exactly how the layout should seem, wil
 * I want to start over the game if I want to.
 * I want to know when I win the game and not an infinite game.
 
-#### 1. Strategy
+#### Strategy
 The aim of this project is to create interactivity between the user and the game.
 
-#### 2. Goals
+#### Goals
 The goal of this website is to give a good experience to the user and to the user to have fun with this interactive game.
 
-#### 3. Scope
+#### Scope
 The website is designed to be responsive so that users can also interact with it on mobile.
 
 ---
 
-#### 4. Features
+#### Features
 
 * Navbar
     * Basic Navbar, navbar taken from the previous milestone project and adapted to this project. Only has 2 list items on this case, the homepage and contact from
@@ -57,7 +57,7 @@ The website is designed to be responsive so that users can also interact with it
 
 ---
 
-#### 5. Skeleton
+#### Skeleton
 
 * Wireframe was created using [Balsamiq](https://balsamiq.com/)
 
@@ -120,12 +120,20 @@ Used the above validators to check the code but tested the following:
 5. Played full game to ensure alert text box shows at the end of the game and winner sound is played,
 6. Missed sequence to check alert text box shows incorrect message and sequence is repeated, validated on Devtools Console checking the original sequence,
 7. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
+8. Tested navbar buttons, all directing to correct Pages
+9. Tested Contact Form:
+    * Left Name empty, cannot submit form
+    * Place no email error message displayed
+    * Place email without @ symbol error message displayed
+    * submit form, message received on my email inbox
+
 
 ##### Bugs/errors
 1. I had to start over the javascript code multiple times due to errors on javascript code.
 2. Based on other users the start and Stop buttons are too small on mobile, adjusted size of the font to 30px
 3. Sounds were confusing for new users
-4. Game pag was closer to right side, adjusted padding so that game pad is centered
+4. Game pad was closer to right side, adjusted padding so that game pad is centered
+5. When screen resolution is bellow 400px game is cut off
 
 ## Deployment
 
@@ -149,19 +157,24 @@ Used the above validators to check the code but tested the following:
 
 I used several code from other users:
 
-[Highlight sequence](https://stackoverflow.com/a/36707123/9179340)
-[How to compare arrays](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771) from Stack Overflow
-[Happy Coder](https://www.youtube.com/watch?v=4pfvy_A5ceE) The code for playing sounds is from this video by YouTube user Happy Coder , I had a error when the load was invocked but this was due to sound id being displayed incorrectly, corrected id name and load function is working.
-[Soundjay](https://www.soundjay.com/index.html) for all sounds on the game
-[Freshman](https://freshman.tech/simon-game/) Tutorial for beginners on how to build a Simon game with JS
+* [Highlight sequence](https://stackoverflow.com/a/36707123/9179340)
+* [How to compare arrays](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript#19746771) from Stack Overflow
+* [Happy Coder](https://www.youtube.com/watch?v=4pfvy_A5ceE) The code for playing sounds is from this video by YouTube user Happy Coder , I had a error when the load was invocked but this was due to sound id being displayed incorrectly, corrected id name and load function is working.
+* [Soundjay](https://www.soundjay.com/index.html) for all sounds on the game
+* [Freshman](https://freshman.tech/simon-game/) Tutorial for beginners on how to build a Simon game with JS
+* [George Lewis](https://www.youtube.com/watch?v=zwKoo7VDj44) - Ideas on how to write out my HTML for the Simon game
+* [George Lewis](https://www.youtube.com/watch?v=muPIIfjazcU) - Ideas on how to write out my CSS for the Simon game
 
 ##### Code Snippets
 
 * ###### [Code Institute](https://codeinstitute.net/)
-    *Used code from Rosie resume project on contact form
+    * Used code from Rosie resume project on contact form.
 
+* ###### [Rafael Assugeni](https://assugeni.github.io/milestone-simon/)
+    * Used code for building the game section and adjusted to my project.
 
-
+---
 
 ## Acknowledgements
-I've reached out to my mentor 
+I would like to thank my mentor, **Spencer Barriball**, for his help on this project and for providing me some tools that made my project easier,
+**Slack Community** for their assistance with minor coding issues and **Rafael Assugeni** who tested my page and gave me excellent feedback based on his milestone submission.

@@ -12,29 +12,6 @@
     </head>
      
     <body>
-        <!--Audio Sequence-->
-        <audio id="blue-sound">
-            <source src="https://www.soundjay.com/button/sounds/button-37.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="yellow-sound">
-            <source src="https://www.soundjay.com/button/sounds/beep-06.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="green-sound">
-            <source src="https://www.soundjay.com/misc/sounds/censor-beep-01.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="red-sound">
-            <source src="https://www.soundjay.com/button/sounds/button-3.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="error-sound">
-            <source src="https://www.soundjay.com/button/sounds/button-4.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="winner">
-            <source src="https://www.soundjay.com/human/sounds/applause-01.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="correct">
-            <source src="https://www.soundjay.com/button/sounds/button-15.mp3" type="audio/mpeg">
-        </audio>
-        
         <!--Navbar taken from previous milestone-->
         <div class="container-fluid navalert-container">
             <nav class="navbar navbar-light  navbar-expand-lg">
@@ -56,7 +33,7 @@
             <div class="row">
                 <!--Game Instructions-->
                         <div class="col-xs-12 col-lg-12 text instructions">
-                            <h2>Instructions | Simon Game<sup>&#174;</sup></h2>
+                            <h1>Instructions | Simon Game<sup>&#174;</sup></h1>
                                 <ol>
                                     <li>Click the Start Button. This will start the sequence of the game, 
                                         please pay attention to the sound, this will help you better identify the correct tile you need to click.</li>
@@ -73,7 +50,7 @@
                             <button type="button" id="stop" class="btn btn-danger">Stop</button>
                         </div>
                         <!--End of Buttons Section-->
-                        <!--Game Section-->
+                        <!--Game Section taken from https://assugeni.github.io/milestone-simon/ and adjusted to my own project-->
                         <div class="row pad">
                             <div class="col-xs-12 col-lg-12" ></div>
                                 <div class="col-md-12 text-center circle">
@@ -88,7 +65,28 @@
                         <!--end of Game Section-->
             </div>
         </div>
-
+                <!--Audio Sequence-->
+        <audio id="blue-sound">
+            <source src="https://www.soundjay.com/button/sounds/button-37.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="yellow-sound">
+            <source src="https://www.soundjay.com/button/sounds/beep-06.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="green-sound">
+            <source src="https://www.soundjay.com/misc/sounds/censor-beep-01.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="red-sound">
+            <source src="https://www.soundjay.com/button/sounds/button-3.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="error-sound">
+            <source src="https://www.soundjay.com/button/sounds/button-4.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="winner">
+            <source src="https://www.soundjay.com/human/sounds/applause-01.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="correct">
+            <source src="https://www.soundjay.com/button/sounds/button-15.mp3" type="audio/mpeg">
+        </audio>
 
         <!--Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
