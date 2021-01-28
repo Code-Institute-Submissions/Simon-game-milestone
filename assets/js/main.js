@@ -30,7 +30,7 @@ $(".panel").mousedown(function() {
    if (userSeq.length == gameSeq.length) { 
     setTimeout(function(){ 
       sequenceCompare();
-    }, 500);
+    }, 700);
   }
 });
 //when user releases the left mouse click removes active class to not highlight
@@ -46,7 +46,7 @@ function highlightColours() {
         $(element + "-sound")[0].load();
         $(element + "-sound")[0].play(); 
         $(element).addClass("active");
-        setTimeout(function(){$(element).removeClass("active");}, 500);
+        setTimeout(function(){$(element).removeClass("active");}, 700);
     },
     700 * index); 
   });
