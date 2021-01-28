@@ -1,6 +1,6 @@
 # Simon Game
 
-![](assets/images/Capture.png)
+![](assets/images/Capture.PNG)
 
 Hello and welcome to my second milestone project. For this project I chose to create my version of the simon game, as I like the attention to detail and love the challenge I think that this would be the right selection for me.
 The Simon Game is a memory game and was invented by Ralph H. Baer and Howard J. Morrison in 1978.
