@@ -76,12 +76,20 @@ h1 {
 
 .active {
     opacity: .5;
-    -webkit-transform: translate(0, 4px);
-    -moz-transform: translate(0, 4px);
-    -ms-transform: translate(0, 4px);
-    -o-transform: translate(0, 4px);
-    transform: translate(0, 4px);
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, .75);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, .75);
-    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, .75);
+}
+
+.bottomRightPanel:hover {
+    opacity: .5;
+}
+
+.bottomLeftPanel:hover {
+    opacity: .5;
+}
+
+.topRightPanel:hover {
+    opacity: .5;
+}
+
+.topLeftPanel:hover {
+    opacity: .5;
 }
