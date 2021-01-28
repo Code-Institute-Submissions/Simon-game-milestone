@@ -19,9 +19,9 @@ h1 {
     margin: 33px;
     border: 10px solid #333;
     background-color: #333;
-    border-radius: 45%;
+    border-radius: 30%;
     height: 450px;
-    width: 400px;
+    width: 450px;
     padding: 30px;
     overflow: hidden;
     position: relative;
@@ -80,7 +80,7 @@ h1 {
 
 /*Footer*/
 .foot {
-    margin-top: 100px;
+    margin-top: 30px;
     background-color: #DAE2DF;
     font-size: small;
 }
@@ -88,4 +88,5 @@ h1 {
 p {
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
 }
