@@ -55,8 +55,8 @@ The website is designed to be responsive so that users can also interact with it
     * I opted not to include the Strict mode as some user enquired said that is fairly annoying to every time they got one tile wrong to start over.
     * 2 Alert boxes added to javascript code (when user gets sequence incorrect and when user wins the game) also sound added for when user gets sequence correct and when user wins the game a clapping sound plays.
 
-* Contact Form Page
-    * Basic Bootstrap contact form with Email API to forward the contact from the users to me.
+* Contact US section
+    * Links to Social media added in order for people to reach me.
 
 ---
 
@@ -71,8 +71,8 @@ The website is designed to be responsive so that users can also interact with it
 ---
 
 ## Changes
-Removed contact us page and added social media links to navbar.
-Removed on/off switch and only added start/stop button easier to understand
+* Removed contact us page and added social media links to navbar.
+* Removed on/off switch and only added start/stop button easier to understand
 
 ## Technologies Used
 
@@ -139,7 +139,7 @@ Used the above validators to check the code but tested the following:
 
 ##### GitHub Pages
 
-1. A local project was created in GitHub with a new repository called 'Mind-Gym-Project'
+1. A local project was created in GitHub with a new repository called 'Simon-Game-Milestone'
 2. The project had regular push and detailed commits which were pushed to the GitHub website before deployment
 3. The project was deployed by logging in to GitHub and locating the [GitHub Repository](https://nunocos.github.io/Simon-game-milestone/)
 4. At the top of the Repository (not top of page), locate the "Settings" Button on the menu and click
