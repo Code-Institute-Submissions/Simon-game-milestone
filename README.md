@@ -66,11 +66,11 @@ The website is designed to be responsive so that users can also interact with it
 
 ![](assets/images/Homepage.png)
 
-##### Contact Us
-
-![](assets/images/ContactForm.png)
-
 ---
+
+## Changes
+Removed contact us page and added social media links to navbar.
+Removed on/off switch and only added start/stop button easier to understand
 
 ## Technologies Used
 
@@ -122,21 +122,16 @@ Used the above validators to check the code but tested the following:
 6. Missed sequence to check alert text box shows incorrect message and sequence is repeated, validated on Devtools Console checking the original sequence,
 7. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
 8. Tested navbar buttons, all directing to correct Pages
-9. Tested Contact Form:
-    * Left Name empty, cannot submit form - ok
-    * Place no email error message displayed
-    * Place email without @ symbol error message displayed
-    * submit form, message received on my email inbox
+
 
 
 ##### Bugs/errors
-1. I had to start over the javascript code multiple times due to errors on javascript code.
+1. I had to start over the javascript code multiple times due to errors on javascript code with sequence not highlighting and stop button not working.
 2. Based on other users the start and Stop buttons are too small on mobile, adjusted size of the font to 30px
-3. Sounds were confusing for new users
+3. Keys pressed not highlighting, this issue only happens on mobile, website optimized for desktop use.
 4. Game pad was closer to right side, adjusted padding so that game pad is centered
-5. When screen resolution is bellow 400px game is cut off
-6. Every time contact page loads theres is one email sent.
-7. On Iphone there is a delay on highlight and sound when playing the game.
+5. When screen resolution is bellow 400px game is cut off, reduced game area size and issue is no longer visible
+7. On Iphone there is a delay on highlight and sound when playing the game. This was sorted by adding the audio files in the header of html instead of the end.
 
 ## Deployment
 
@@ -155,7 +150,6 @@ Used the above validators to check the code but tested the following:
 11. The Download option gives you a link so that you can download the zip file so that you can unzip it in your local machine
 ---
 
-
 ## Credits
 
 I used several code from other users:
@@ -173,8 +167,7 @@ I used several code from other users:
 * [Code Review](https://codereview.stackexchange.com/questions/162096/simon-game-in-javascript) - JavaScript section developed based on example and adapted to my own, took in consideration the comments from other developers.
 
 * [Code Institute](https://codeinstitute.net/)
-    * Used code from Rosie resume project on contact form.
-    
+    * Used code for Navbar and adjusted to my project
 ---
 
 ## Acknowledgements

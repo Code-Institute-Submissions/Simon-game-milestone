@@ -51,7 +51,7 @@ function highlightColours() {
     700 * index); 
   });
 }
-//Compare User sequence with computer sequence
+//Compare User sequence with computer sequence based on https://stackoverflow.com/a/36707123/9179340
 function sequenceCompare() {
   if (userSeq.every(function(value, index) { return value === gameSeq[index]})) { 
     console.log("Match"); 
@@ -70,13 +70,13 @@ function sequenceCompare() {
             gameSeq.push(rand); 
             console.log(gameSeq);
             highlightColours();
-            }, 500);
+            }, 700);
         } 
   } 
 //error message when user gets wrong sequence
         else {
-            $("#error-sound")[0].load();
-            $("#error-sound")[0].play();
+            $("#lose-sound")[0].load();
+            $("#lose-sound")[0].play();
             alert("Almost!!Give it another Go"); 
             userSeq = [];
             highlightColours();

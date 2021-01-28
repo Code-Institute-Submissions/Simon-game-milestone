@@ -19,9 +19,9 @@ h1 {
     margin: 33px;
     border: 10px solid #333;
     background-color: #333;
-    border-radius: 30%;
-    height: 500px;
-    width: 500px;
+    border-radius: 45%;
+    height: 450px;
+    width: 400px;
     padding: 30px;
     overflow: hidden;
     position: relative;
@@ -30,45 +30,45 @@ h1 {
 /*Pannels*/
 .topLeftPanel {
     position: absolute;
-    background-color: red;
+    background-color: #FF5A5F;
     width: 50%;
     height: 45%;
     left: 55%;
-    right: 0%;
+    right: 0;
     bottom: 50%;
-    top: 0%;
+    top: 0;
 }
 
 .topRightPanel {
     position: absolute;
-    background-color: green;
+    background-color: #8CD867;
     width: 45%;
     height: 45%;
-    left: 0%;
+    left: 0;
     right: 45%;
     bottom: 50%;
-    top: 0%
+    top: 0;
 }
 
 .bottomLeftPanel {
     position: absolute;
-    background-color: yellow;
+    background-color: #EAC435;
     width: 45%;
     height: 50%;
     left: 0;
     right: 50%;
-    bottom: 0%;
+    bottom: 0;
     top: 55%;
 }
 
 .bottomRightPanel {
   position: absolute;
-  background-color: blue;
+  background-color: #449DD1;
   width: 50%;
   height: 50%;
   left: 55%;
-  right: 0%;
-  bottom: 0%;
+  right: 0;
+  bottom: 0;
   top: 55%;
 }
 
@@ -78,18 +78,14 @@ h1 {
     opacity: .5;
 }
 
-.bottomRightPanel:hover {
-    opacity: .5;
+/*Footer*/
+.foot {
+    margin-top: 100px;
+    background-color: #DAE2DF;
+    font-size: small;
 }
 
-.bottomLeftPanel:hover {
-    opacity: .5;
-}
-
-.topRightPanel:hover {
-    opacity: .5;
-}
-
-.topLeftPanel:hover {
-    opacity: .5;
+p {
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
