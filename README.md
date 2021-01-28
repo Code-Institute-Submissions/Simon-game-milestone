@@ -33,17 +33,17 @@ The aim of this project is to create interactivity between the user and the game
 The goal of this website is to give a good experience to the user and to the user to have fun with this interactive game.
 
 #### Scope
-The website is designed to be responsive so that users can also interact with it on mobile.
+The website is optimized for desktop but will work on Mobile, layout is responsive but highlight function doesn't add the highlight when mobile adjusted.
 
 ---
 
 #### Features
 
 * Navbar
-    * Basic Navbar, navbar taken from the previous milestone project and adapted to this project. Only has 2 list items on this case, the homepage and contact from
+    * Basic Navbar, navbar taken from the previous milestone project and adapted to this project. Only has 2 list items on this case, the homepage and contact us.
 
 * Homepage
-    * On the homepage there will be displayed only the game and instructions.
+    * On the homepage there will be displayed only the game and instructions. A brief description of the game added to the footer to educate users.
 
 * Instructions
     * Clear instructions added, user just needs to follow the directions.
@@ -108,7 +108,7 @@ The website is designed to be responsive so that users can also interact with it
 * no errors found, all PASS
 
 [JS Hint](https://jshint.com/)
-    *No errors found, just one warning.
+* No errors found, just one warning.
 
 [Google's Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
 * Page is mobile responsive
