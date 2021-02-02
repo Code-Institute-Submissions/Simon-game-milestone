@@ -116,15 +116,19 @@ The website is optimized for desktop but will work on Mobile, layout is responsi
 ##### Testing
 
 Used the above validators to check the code but tested the following:
-1. Clicked start and stop buttons to check if correct action is being done,
-2. Checked if score was incremented correctly,
-3. Checked on Devtools console tab if the game sequence and user sequence were being displayed correctly,
-4. Checked on Devtools console tab if correct IDs were being invocked,
-5. Played full game to ensure alert text box shows at the end of the game and winner sound is played,
-6. Missed sequence to check alert text box shows incorrect message and sequence is repeated, validated on Devtools Console checking the original sequence,
-7. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
-8. Tested navbar buttons, all directing to correct Pages
-
+1. Clicked start gamesequence initiats with random tile being highlighted,
+2. Clicked stop buttons to check if gamesequence stops and page is refreshed,
+3. Checked if score was incremented correctly,
+4. Checked on Devtools console tab if the game sequence and user sequence were being displayed correctly,
+5. Checked on Devtools console tab if correct IDs were being invocked,
+6. Played full game to ensure alert text box shows at the end of the game and winner sound is played,
+7. Missed sequence to check alert text box shows incorrect message and sequence is repeated, validated on Devtools Console checking the original sequence,
+8. Pressed multiple times the start button to ensure that button is turned off after it is pressed.
+9. Tested navbar buttons,
+10. Facebook item in Navbar redirecting to my Facebook page,
+11. Linkedin item in Navbar reditecting to my Linkedin page,
+12. Click Simon game logo, page refreshing,
+13. Clicked Source on footer section, redirecting to Wikipedia.
 
 
 ##### Bugs/errors
@@ -134,6 +138,7 @@ Used the above validators to check the code but tested the following:
 4. Game pad was closer to right side, adjusted padding so that game pad is centered
 5. When screen resolution is bellow 400px game is cut off, reduced game area size and issue is no longer visible
 7. On Iphone there is a delay on highlight and sound when playing the game. This was sorted by adding the audio files in the header of html instead of the end.
+8. Sequence was starting and tile highlight speed was too long, adjusted timeout to 500 instead of 700
 
 ## Deployment
 
