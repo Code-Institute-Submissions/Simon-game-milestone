@@ -48,13 +48,12 @@ function highlightColours() {
         $(element).addClass("active");
         setTimeout(function(){$(element).removeClass("active");}, 500);
     },
-    700 * index); 
+    800 * index); 
   });
 }
 //Compare User sequence with computer sequence based on https://stackoverflow.com/a/36707123/9179340
 function sequenceCompare() {
-  if (userSeq.every(function(value, index) { return value === gameSeq[index]})) { 
-    console.log("Match"); 
+  if (userSeq.every(function(value, index) { return value === gameSeq[index]})) {  
     gameScore++; 
     $("#score").text(gameScore); 
     userSeq = []; 
