@@ -39,7 +39,7 @@ $(".panel").mouseup(function() {
 });
 
 
-//Game sequence highlight adding css class .active to the panel
+//Game sequence highlight adding css class .active to the panel highlight code from (https://stackoverflow.com/a/36707123/9179340)
 function highlightColours() {
   gameSeq.forEach(function(element, index){ 
     setTimeout(function(){
